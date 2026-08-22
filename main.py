@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 model = YOLO("yolo11n.pt")
 
-results = model("https://ultralytics.com/images/bus.jpg")
+results = model("/Users/pawaneswaran/Desktop/Work/PROJECTS/YOLO miniproj/yolo-mini/bus.jpg")
 
 result = results[0]
 
