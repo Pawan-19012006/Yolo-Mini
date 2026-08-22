@@ -6,11 +6,10 @@ results = model("https://ultralytics.com/images/bus.jpg")
 
 result = results[0]
 
-print("Bounding boxes:")
-print(result.boxes.xyxy)
+annotated_image = result.plot()
 
-print("\nConfidence:")
-print(result.boxes.conf)
+from PIL import Image
 
-print("\nClass IDs:")
-print(result.boxes.cls)
+Image.fromarray(annotated_image).save("detected.jpg")
+
+print("Saved detection image as detected.jpg")
