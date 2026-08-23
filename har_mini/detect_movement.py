@@ -48,11 +48,11 @@ while True:
                 previous_x, previous_y = previous_positions[track_id]
 
                 distance = (
-                    (center_x - previous_x) ** 2
+                    (center_x - previous_x) ** 2. #We calculate how far the center has been moved from the previous frame to the current frame
                     + (center_y - previous_y) ** 2
                 ) ** 0.5
 
-                if distance > 5:
+                if distance > 5: #We set a threshold on how much distance from previous frame is considered moving
                     status = "MOVING"
                 else:
                     status = "STATIONARY"
