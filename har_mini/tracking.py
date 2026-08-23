@@ -44,7 +44,7 @@ while True:
 
     annotated_frame = results[0].plot()
 
-    cv2.imshow("SIH Tracking", annotated_frame)
+    cv2.imshow("Tracking", annotated_frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break

@@ -41,7 +41,7 @@ while True:
 
     annotated_frame = results[0].plot()
 
-    cv2.imshow("SIH Detection Data", annotated_frame)
+    cv2.imshow("Detection Data", annotated_frame)
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
